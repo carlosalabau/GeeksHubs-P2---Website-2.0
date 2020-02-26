@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(212, 212, 212);
+}
+/* Estilos del Menu */
+.portada{
+    background: url("../img/adventure.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(212, 212, 212);
+}
+.titulo-portada{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+}
+.menu,.portada>nav p{
+    margin: 0;
+}
+.menu>li, .portada>nav p{
+    display: inline;
+    list-style: none;
+    padding: 0 20px 0 20px;
+}
+header>h1{
+    padding: 25px;
+    background-color:rgb(73, 73, 73);
+    letter-spacing: 5px;
+}
+.portada>nav{
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+}
+/* Estilos de about */
+
+.about{
+    height: 100vh;
+}
+.about nav{
+    background-color: black;
+}
+.img-personal{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
