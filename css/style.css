@@ -1,6 +1,11 @@
-body{
-    background-color: rgb(212, 212, 212);
+*{
+ margin: 0;
+ padding: 0;   
 }
+body{
+    background-color: rgb(240, 240, 240);
+}
+
 /* Estilos del Menu */
 .portada{
     background: url("../img/adventure.jpg") no-repeat center center fixed;
@@ -48,4 +53,32 @@ header>h1{
     border: 1px solid black;
     width: 300px;
     height: 300px;
+}
+.about>section{
+    height: 45vh;
+    font-size: 1.3em;
+}
+.about>section:nth-child(1)>h2{
+    font-style: italic ;
+}
+/* Estilos del titulo portfolio */
+.titulo-portfolio{
+    background: url("../img/back3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.capa{
+    background-color: rgba(134, 134, 134, 0.69);
+    z-index: 999;
+    height: 100%;
+    color: rgb(212, 212, 212);
+}
+.capa h1{
+    letter-spacing: 5px;
 }
