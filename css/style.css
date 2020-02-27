@@ -5,6 +5,13 @@
 body{
     background-color: rgb(240, 240, 240);
 }
+/*Media Queries */
+
+@media (max-width: 960px) { 
+    .img-personal{
+        display: none;
+    }
+ }
 
 /* Estilos del Menu */
 .portada{
@@ -22,7 +29,13 @@ body{
     align-items:center;
     height: 80vh;
 }
-.menu,.portada>nav p{
+#barra-menu{
+    z-index: 99999999;
+}
+.menu{
+    margin: 0 20px 0 0;
+}
+.portada>nav p{
     margin: 0;
 }
 .menu>li, .portada>nav p{
@@ -50,9 +63,9 @@ header>h1{
 }
 .img-personal{
     border-radius: 50%;
-    border: 1px solid black;
-    width: 300px;
-    height: 300px;
+}
+.about>section>ul>li{
+    list-style: none;
 }
 .about>section{
     height: 50vh;
@@ -83,21 +96,71 @@ header>h1{
     letter-spacing: 5px;
 }
 /* Estilos de portfolio */
-.portfolio{
+
+.portfolio, .contacto{
     height: 100vh;
 }
-.portfolio>section:nth-child(1){
+.portfolio>section:nth-child(1), .contacto>section:nth-child(1){
     height: 40vh;
 }
-.portfolio>section>h1{
+.portfolio>section>h1, .contacto>section>h1{
     font-size: 1.5rem;
 }
-.portfolio>section>h2{
+.portfolio>section>h2, .contacto>section>h2{
     font-size: 1rem;
 }
+.portfolio>section .card img{
+    width: 100%;
+    height: 100%;
+}
 .col-3{
-    border: 1px solid black;
-    height: 200px;
+    /* height: 12em; */
     margin-bottom: 20px;
-    padding: 10px;
+    position: relative;
+}
+.col-3 img{
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+.capa-img{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(68, 87, 255, 0.5);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.col-3:hover .capa-img{
+    display: block;
+}
+/* Estilos del titulo de contacto */
+
+.titulo-contacto{
+    background: url("../img/contacto.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+/*Estilos de la pagina contacto*/
+.contacto{
+    height: 100vh;
+}
+.contacto>section iframe{
+    width: 100%;
+    height: 100%;
+}
+.contacto>section ul>li{
+    list-style: none;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.637);
+}
+.contacto>section ul>li>i{
+    margin-right: 10px;
+    color: black;
 }
