@@ -5,14 +5,18 @@
 body{
     background-color: rgb(240, 240, 240);
 }
-/*Media Queries */
+/* Media Queries */
 
-@media (max-width: 960px) { 
-    .img-personal{
-        display: none;
+@media (min-width: 100px) and (max-width:720px){
+    .portfolio .card{
+        margin-bottom: 20px;
     }
- }
-
+}
+@media (max-width: 720px){
+    .titulo-portfolio, .titulo-contacto{
+        height: 40vh !important;
+    }
+}
 /* Estilos del Menu */
 .portada{
     background: url("../img/adventure.jpg") no-repeat center center fixed;
@@ -50,25 +54,22 @@ header>h1{
 }
 .portada>nav{
     height: 10vh;
-    position: fixed;
+    position: fixed !important;
     width: 100vw;
 }
 /* Estilos de about */
 
-.about{
-    height: 100vh;
-}
 .about nav{
     background-color: black;
 }
 .img-personal{
     border-radius: 50%;
+    height: 18em;
 }
 .about>section>ul>li{
     list-style: none;
 }
 .about>section{
-    height: 50vh;
     font-size: 1.3em;
 }
 .about>section:nth-child(1)>h2{
@@ -97,28 +98,33 @@ header>h1{
 }
 /* Estilos de portfolio */
 
-.portfolio, .contacto{
-    height: 100vh;
+.portfolio, .contacto, .about{
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.portfolio>section:nth-child(1), .contacto>section:nth-child(1){
-    height: 40vh;
+.portfolio>section, .about>section, .contacto>section{
+    margin-bottom: 100px;
 }
-.portfolio>section>h1, .contacto>section>h1{
+.portfolio>section>h1, .contacto>section>h1, .about>section>h1{
+    font-size: 2rem;
+}
+.portfolio>section>h2, .contacto>section>h2, .about>section>h2{
     font-size: 1.5rem;
 }
-.portfolio>section>h2, .contacto>section>h2{
-    font-size: 1rem;
+
+.portfolio .card{
+    width: 100% !important;
 }
-.portfolio>section .card img{
-    width: 100%;
-    height: 100%;
+.portfolio .card .card-text{
+    height: 100px;
 }
-.col-3{
-    /* height: 12em; */
+/* .portfolio .col-3{
+    /* height: 12em; 
     margin-bottom: 20px;
     position: relative;
 }
-.col-3 img{
+.portfolio .col-3 img{
     width: 100%;
     height: 100%;
     z-index: -1; 
@@ -131,9 +137,9 @@ header>h1{
     top: 0;
     display: none;
 }
-.col-3:hover .capa-img{
+.portfolio .col-3:hover .capa-img{
     display: block;
-}
+} */
 /* Estilos del titulo de contacto */
 
 .titulo-contacto{
@@ -148,9 +154,6 @@ header>h1{
     padding: 0;
 }
 /*Estilos de la pagina contacto*/
-.contacto{
-    height: 100vh;
-}
 .contacto>section iframe{
     width: 100%;
     height: 100%;
@@ -163,4 +166,9 @@ header>h1{
 .contacto>section ul>li>i{
     margin-right: 10px;
     color: black;
+}
+/*Estilos del footer*/
+footer{
+    height: 20vh;
+    background-color: rgba(134, 134, 134, 0.69);
 }

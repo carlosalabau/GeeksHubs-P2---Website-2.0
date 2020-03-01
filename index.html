@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container-fluid portada">
-        <nav id="barra-menu" class="row justify-content-between d-flex align-items-center">
+        <nav id="barra-menu" class="row justify-content-between align-items-center d-none d-md-flex">
             <p>Carlos</p>
             <ul class="menu">
                 <li>About</li>
@@ -27,7 +27,7 @@
     </div>
     <div class="container about flex-column">
         <section class="row">
-            <ul class="justify-content-center d-flex flex-column align-items-center">
+            <ul class="justify-content-center d-flex flex-column align-items-center col-12">
                 <li><h1>Sobre mi</h1></li>
                 <li><h2>I love programming</h2></li>
                 <li><p>Lorem fistrum caballo blanco caballo negroorl a gramenawer condemor a peich diodenoo. Caballo blanco caballo negroorl amatomaa a wan te va a hasé pupitaa.Por la gloria de mi madre no te digo trigo por no llamarte Rodrigor tiene musho peligro torpedo por la gloria de mi madre está la cosa muy malar. 
@@ -35,8 +35,8 @@
             </ul>
         </section>
         <section class="row">
-            <img src="img/arboles.jpg" alt="Imagen-personal" class="img-personal col-3" />
-            <p class="col-9 d-flex justify-content-end align-items-center">By the help of FreeCodeCamp I will be a Full Stack Web Developer soon!</p>
+            <img src="img/arboles.jpg" alt="Imagen-personal" class="img-personal col-md-4 d-none d-lg-block" />
+            <p class="col-12 col-md-8 d-flex justify-content-end align-items-center">By the help of FreeCodeCamp I will be a Full Stack Web Developer soon!</p>
         </section>
     </div>
     <div class="container-fluid titulo-portfolio">
@@ -48,15 +48,56 @@
         <section class="justify-content-center d-flex align-items-center flex-column">
             <h1>MIS TRABAJOS</h1>
             <h2>Aqui estan mis ultimos trabajos</h2>
-            <h2>Click en las imagenes para ir al proyecto</h2>
+            <h2>Click para ir al proyecto</h2>
         </section>
         <section class="row">
-                <div class="col-3"> 
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="img/google.png" class="card-img-top" alt="Proyecto copia google">
+                    <div class="card-body">
+                      <h5 class="card-title">Google Clon</h5>
+                      <p class="card-text">Este proyecto es una copia de Google, para probar las propiedades flex y grid</p>
+                      <a href="https://github.com/carlosalabau/GoogleClone" class="btn btn-primary" target="_blank">Proyecto</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                  <img src="img/login.png" class="card-img-top" alt="Proyecto Login">
+                  <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <p class="card-text">Ejercicio libre realizado para tener un ejemplo de un login y poder aplicarlo en futuros proyectos</p>
+                    <a href="https://github.com/carlosalabau/Login" class="btn btn-primary" target="_blank">Proyecto</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="img/twitter.png" class="card-img-top" alt="Proyecto copia twitter">
+                    <div class="card-body">
+                      <h5 class="card-title">Twitter Clon</h5>
+                      <p class="card-text">Este proyecto es una copia de Twitter, para probar las propiedades flex y grid.</p>
+                      <a href="https://github.com/carlosalabau/Copia_Twitter" class="btn btn-primary" target="_blank">Proyecto</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="img/estaciones.png" class="card-img-top" alt="Proyecto 4estaciones">
+                    <div class="card-body">
+                      <h5 class="card-title">4 Estaciones</h5>
+                      <p class="card-text">Ejercicio libre realizado para tener un ejemplo de un portfolio y poder aplicarlo en futuros proyectos</p>
+                      <a href="https://github.com/carlosalabau/4Estaciones" class="btn btn-primary" target="_blank">Proyecto</a>
+                    </div>
+                  </div>
+            </div>
+<!--                 <div class="col-3"> 
                  <img src="img/google.png" alt="Miniatura_Google" /><div class="capa-img"></div></div>
                  <div class="col-3"><img src="img/estaciones.png" alt="Miniatura_estaciones"><div class="capa-img"></div></div>
                 <div class="col-3"><img src="img/login.png" alt="Miniatura_login"><div class="capa-img"></div></div>
                 <div class="col-3"><img src="img/twitter.png" alt="Miniatura_twitter"><div class="capa-img"></div></div>
-        </section>
+ -->        
+</section>
     </div>
     <div class="container-fluid titulo-contacto">
         <div class="capa justify-content-center d-flex align-items-center">
@@ -69,10 +110,10 @@
             <h2>I'd love your feedback!</h2>
         </section>
         <section class="row">
-              <div class="col-6">
+              <div class="col-md-6 col-12">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.569910631643!2d-0.32892597766599!3d39.45645193243165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60485af4bdcc2f%3A0x4fbe71f29f387392!2sInnsomnia%2C%20innovators%20that%20dream!5e0!3m2!1ses!2ses!4v1582819159958!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-12">
                   <ul>
                       <li><i class="fas fa-map-marker-alt"></i> Moll de Ponent, 46024 Valencia</li>
                       <li><i class="fas fa-phone-alt"></i> Phone: +34 636 63 36 66</li>
@@ -107,8 +148,8 @@
               </div>
         </section>
     </div>
-    <footer class="container">
-
+    <footer class="container-fluid">
+        
     </footer>
 </body>
 </html>
