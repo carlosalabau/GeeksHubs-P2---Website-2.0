@@ -6,6 +6,9 @@ body{
     background-color: rgb(240, 240, 240);
     font-family: 'Montserrat' !important;
 }
+#principal{
+    display: none;
+}
 /* Media Queries */
 
 @media (min-width: 100px) and (max-width:720px){
@@ -19,7 +22,7 @@ body{
     }
 }
 /* Estilos del Menu */
-.portada{
+.portada, #login{
     background: url("../img/adventure.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,7 +37,10 @@ body{
     align-items:center;
     height: 80vh;
 }
-
+.leti{
+    width: 20px;
+    height: 20px;
+}
 #barra-menu{
     z-index: 99999999;
 }
@@ -43,6 +49,10 @@ body{
 }
 .portada>nav p{
     margin: 0;
+}
+.portada>nav p i{
+    margin-left: 10px;
+    cursor: pointer;
 }
 .menu>li, .portada>nav p{
     display: inline;
@@ -173,3 +183,38 @@ footer p i{
     color: black;
 }
 
+/* ESTILOS DEL LOGIN */
+
+#login nav{
+    height: 20vh;
+    padding-right: 10px;
+    
+}
+#login main .row{
+    height: 80vh;
+    color: rgb(73, 70, 70);
+}
+.form-registro, .form-inicio{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(255,255,255,.7);
+}
+.btn-registro,.reg{
+    margin: 0 10px;
+}
+.reg{
+    color: rgb(0, 6, 95);
+}
+.btn-entrar, .btn-registrar{
+    margin: 10px 0;
+
+}
+.inputs{
+    padding-left: 10px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+}

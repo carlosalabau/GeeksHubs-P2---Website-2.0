@@ -8,12 +8,41 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/746846aaa2.js" crossorigin="anonymous"></script>
     <title>Pagina personal</title>
 </head>
 <body>
+  <!-- PAGINA DE REGISTRO -->
+  <div id="login">
+    <div class="container-fluid">
+      <nav class="row justify-content-end align-items-center">
+          <button type="button" class="btn-inicio btn btn-light">Iniciar sesion</button>
+          <button type="button" class="btn-registro btn btn-dark">Registro</button>
+      </nav>
+  </div>
+      <main class="container">  
+        <section class="row justify-content-center align-items-start">
+          <form class="form-inicio" action="#" method="POST">
+              <input type="text" placeholder="Nombre de usuario" name="user" class="inputs user"/>
+              <input type="password" placeholder="Contraseña" name="pass" class="inputs pass"/>
+              <button type="button" class="btn-entrar btn btn-primary">Iniciar sesion</button>
+              <p>¿No estas registrado?<span class="registro"><a href="#" class="reg">Registrate</a></span></p>
+          </form>
+          <form action="#" method="POST" class="form-registro">
+              <input type="text" placeholder="Nombre" name="name" class="inputs"/>
+              <input type="text" placeholder="Apellidos" name="apellidos" class="inputs"/>
+              <input type="email" placeholder="Email" name="email" class="inputs"/>
+              <input type="password" placeholder="Contraseña" name="pass_registro" class="inputs"/>
+              <button type="button" class="btn-registrar btn btn-success">Enviar</button>
+          </form>
+        </section>
+      </main>
+  </div>
+  <!-- PAGINA PRINCIPAL -->
+<div id="principal">
     <div class="container-fluid portada">
-        <nav id="barra-menu" class="row justify-content-between align-items-center d-none d-md-flex">
-            <p>Carlos</p>
+        <nav id="barra-menu" class="row align-items-center d-none d-md-flex justify-content-between">
+            <p id="let"><i class="fas fa-sign-out-alt exit"></i></p>
             <ul class="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#titulo-portfolio">Portfolio</a></li>
@@ -24,6 +53,7 @@
             <h1>Carlos Alabau</h1>
         </header>
     </div>
+    <!-- Seccion sobre mi -->
     <div class="container flex-column" id="about">
         <section class="row">
             <ul class="justify-content-center d-flex flex-column align-items-center col-12">
@@ -38,6 +68,7 @@
             <p class="col-12 col-md-8 d-flex justify-content-end align-items-center">By the help of FreeCodeCamp I will be a Full Stack Web Developer soon!</p>
         </section>
     </div>
+    <!-- Seccion protfolio -->
     <div class="container-fluid" id="titulo-portfolio">
         <div class="capa justify-content-center d-flex align-items-center">
             <h1>PORTFOLIO</h1>
@@ -90,14 +121,9 @@
                     </div>
                   </div>
             </div>
-<!--                 <div class="col-3"> 
-                 <img src="img/google.png" alt="Miniatura_Google" /><div class="capa-img"></div></div>
-                 <div class="col-3"><img src="img/estaciones.png" alt="Miniatura_estaciones"><div class="capa-img"></div></div>
-                <div class="col-3"><img src="img/login.png" alt="Miniatura_login"><div class="capa-img"></div></div>
-                <div class="col-3"><img src="img/twitter.png" alt="Miniatura_twitter"><div class="capa-img"></div></div>
- -->        
 </section>
     </div>
+    <!-- Seccion contacto -->
     <div class="container-fluid" id="titulo-contacto">
         <div class="capa justify-content-center d-flex align-items-center">
             <h1>CONTACTO</h1>
@@ -147,12 +173,15 @@
               </div>
         </section>
     </div>
+    <!-- Footer -->
     <footer class="container-fluid justify-content-center align-items-center d-flex flex-column">
       <p>© Carlos Alabau</p>
         <p>Programador Full Stack</p>
         <p><i class="fab fa-github"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-slack"></i></p>
     </footer>
-    <script src="https://kit.fontawesome.com/746846aaa2.js" crossorigin="anonymous"></script>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
