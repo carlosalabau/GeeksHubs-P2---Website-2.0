@@ -17,31 +17,34 @@ $(document).ready(function(){
     $(".form-registro").show("swing");
    })
    //Funcion con JQUERY para mostrar la pagina principal una vez nos logueamos.
+
    $(".btn-entrar").click(function(){
-       if($('.pass').val() == '1234'){
-            $('#login').hide('linear');
-            $("#principal").show('swing');
-            $("#let").prepend('Bienvenido '+$('.user').val());
-            if (typeof(Storage) !== "undefined") {
-                sessionStorage.setItem('Nombre', $('.user').val());
-                sessionStorage.setItem('Pass', $('.pass').val());
-              } else {
-                console.log('Lo sentimos, tu navegador no soporta localStorage')
-              }
+    let user = document.getElementById('user').value;
+    let pass = document.querySelector('.form-inicio .pass').value;
+    console.log(user.value)
+       if(pass == '1234'){
+
+        if (typeof(Storage) !== "") {
+            console.log('hola')
+            localStorage.setItem('Nombre', user);
+            localStorage.setItem('Pass', pass);
+          } else {
+            console.log('Lo sentimos, tu navegador no soporta localStorage')
+          }  
+          location.href='html/principal.html';          
        }else{
            alert('El usuario o la contraseña son incorrectos.')
        }
+       
    })
    $(".exit").click(function(){
-       sessionStorage.clear();
-       $('#principal').hide('linear');
-        $("#login").show('swing');
+       localStorage.clear();
+       location.href='../index.html'
    })
 });
 // Detectamos cuando el usuario desplace la pantalla
 window.onscroll = function() {
 let nav = document.getElementById('barra-menu');
-console.log(nav)
     if(window.scrollY > 600 ){
     nav.style.cssText = 'background-color: black';
     }
@@ -49,5 +52,8 @@ console.log(nav)
         nav.style.cssText = 'background-color: none';
     }
   };
-
+//Cargar la variable del localstorage en pantalla
+function carga(){
+    $('#let').prepend('Bienvenido '+ localStorage.getItem('Nombre'));
+}
 

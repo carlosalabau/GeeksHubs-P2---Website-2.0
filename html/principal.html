@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Pagina personal</title>
+</head>
+<body onload="carga()">
+        <div class="container-fluid portada">
+            <nav id="barra-menu" class="row align-items-center d-none d-md-flex justify-content-between">
+                <p id="let"><i class="fas fa-sign-out-alt exit"></i></p>
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#titulo-portfolio">Portfolio</a></li>
+                    <li><a href="#titulo-contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <header class="titulo-portada">
+                <h1>Carlos Alabau</h1>
+            </header>
+        </div>
+        <!-- Seccion sobre mi -->
+        <div class="container flex-column" id="about">
+            <section class="row">
+                <ul class="justify-content-center d-flex flex-column align-items-center col-12">
+                    <li><h1>Sobre mi</h1></li>
+                    <li><h2>I love programming</h2></li>
+                    <li><p>Lorem fistrum caballo blanco caballo negroorl a gramenawer condemor a peich diodenoo. Caballo blanco caballo negroorl amatomaa a wan te va a hasé pupitaa.Por la gloria de mi madre no te digo trigo por no llamarte Rodrigor tiene musho peligro torpedo por la gloria de mi madre está la cosa muy malar. 
+                    </p></li>
+                </ul>
+            </section>
+            <section class="row">
+                <img src="../img/arboles.jpg" alt="Imagen-personal" class="img-personal col-md-4 d-none d-lg-block" />
+                <p class="col-12 col-md-8 d-flex justify-content-end align-items-center">By the help of FreeCodeCamp I will be a Full Stack Web Developer soon!</p>
+            </section>
+        </div>
+        <!-- Seccion protfolio -->
+        <div class="container-fluid" id="titulo-portfolio">
+            <div class="capa justify-content-center d-flex align-items-center">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="container portfolio">
+            <section class="justify-content-center d-flex align-items-center flex-column">
+                <h1>MIS TRABAJOS</h1>
+                <h2>Aqui estan mis ultimos trabajos</h2>
+                <h2>Click para ir al proyecto</h2>
+            </section>
+            <section class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="../img/google.png" class="card-img-top" alt="Proyecto copia google">
+                        <div class="card-body">
+                          <h5 class="card-title">Google Clon</h5>
+                          <p class="card-text">Este proyecto es una copia de Google, para probar las propiedades flex y grid</p>
+                          <a href="https://github.com/carlosalabau/GoogleClone" class="btn btn-primary" target="_blank">Proyecto</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                      <img src="../img/login.png" class="card-img-top" alt="Proyecto Login">
+                      <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <p class="card-text">Ejercicio libre realizado para tener un ejemplo de un login y poder aplicarlo en futuros proyectos</p>
+                        <a href="https://github.com/carlosalabau/Login" class="btn btn-primary" target="_blank">Proyecto</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="../img/twitter.png" class="card-img-top" alt="Proyecto copia twitter">
+                        <div class="card-body">
+                          <h5 class="card-title">Twitter Clon</h5>
+                          <p class="card-text">Este proyecto es una copia de Twitter, para probar las propiedades flex y grid.</p>
+                          <a href="https://github.com/carlosalabau/Copia_Twitter" class="btn btn-primary" target="_blank">Proyecto</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="../img/estaciones.png" class="card-img-top" alt="Proyecto 4estaciones">
+                        <div class="card-body">
+                          <h5 class="card-title">4 Estaciones</h5>
+                          <p class="card-text">Ejercicio libre realizado para tener un ejemplo de un portfolio y poder aplicarlo en futuros proyectos</p>
+                          <a href="https://github.com/carlosalabau/4Estaciones" class="btn btn-primary" target="_blank">Proyecto</a>
+                        </div>
+                      </div>
+                </div>
+    </section>
+        </div>
+        <!-- Seccion contacto -->
+        <div class="container-fluid" id="titulo-contacto">
+            <div class="capa justify-content-center d-flex align-items-center">
+                <h1>CONTACTO</h1>
+            </div>
+        </div>
+        <div class="container contacto">
+            <section class="justify-content-center d-flex align-items-center flex-column">
+                <h1>DONDE TRABAJO</h1>
+                <h2>I'd love your feedback!</h2>
+            </section>
+            <section class="row">
+                  <div class="col-md-6 col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.569910631643!2d-0.32892597766599!3d39.45645193243165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60485af4bdcc2f%3A0x4fbe71f29f387392!2sInnsomnia%2C%20innovators%20that%20dream!5e0!3m2!1ses!2ses!4v1582819159958!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                  <div class="col-md-6 col-12 formulario-contacto">
+                      <ul>
+                          <li><i class="fas fa-map-marker-alt"></i> Moll de Ponent, 46024 Valencia</li>
+                          <li><i class="fas fa-phone-alt"></i> Phone: +34 636 63 36 66</li>
+                          <li><i class="far fa-envelope"></i> Email: entrevistas@carlosalabau.com</li>
+                      </ul>
+                      <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Introduce tu nombre" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Apellidos</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Introduce tu apellido" aria-label="apellidos" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Introduce tu Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="basic-addon2">@example.com</span>
+                            </div>
+                          </div>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">Observaciones</span>
+                            </div>
+                            <textarea class="form-control" aria-label="Observaciones" rows="4"></textarea>
+                          </div>
+                          <button class="btn btn-primary btn-contacto">Enviar</button>
+                      </form>
+                  </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer class="container-fluid justify-content-center align-items-center d-flex flex-column">
+          <p>© Carlos Alabau</p>
+            <p>Programador Full Stack</p>
+            <p><i class="fab fa-github"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-slack"></i></p>
+        </footer>   
+        <script src="https://kit.fontawesome.com/746846aaa2.js" crossorigin="anonymous"></script>     
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+    </body>
+    </html>
