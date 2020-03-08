@@ -19,23 +19,22 @@ $(document).ready(function(){
    //Funcion con JQUERY para mostrar la pagina principal una vez nos logueamos.
 
    $(".btn-entrar").click(function(){
-    let user = document.getElementById('user').value;
+    let user = document.querySelector('#user').value;
     let pass = document.querySelector('.form-inicio .pass').value;
     console.log(user.value)
        if(pass == '1234'){
 
         if (typeof(Storage) !== "") {
-            console.log('hola')
             localStorage.setItem('Nombre', user);
             localStorage.setItem('Pass', pass);
           } else {
             console.log('Lo sentimos, tu navegador no soporta localStorage')
-          }  
-          location.href='html/principal.html';          
+          }
+          location.href='html/principal.html';
        }else{
            alert('El usuario o la contraseña son incorrectos.')
        }
-       
+
    })
    $(".exit").click(function(){
        localStorage.clear();
@@ -56,4 +55,9 @@ let nav = document.getElementById('barra-menu');
 function carga(){
     $('#let').prepend('Bienvenido '+ localStorage.getItem('Nombre'));
 }
-
+function comprobarToken(){
+  console.log(localStorage.getItem('Nombre'))
+  if(localStorage.getItem('Nombre') != null){
+    location.href='html/principal.html';
+  }
+}
