@@ -14,6 +14,7 @@ git clone https://github.com/carlosalabau/GeeksHubs-P2---Website-2.0
 
 
 [Bootstrap](https://getbootstrap.com/) - El framework web usado.
+
 [JQUERY](https://jquery.com/) - Otro framework muy usado.
 
 
